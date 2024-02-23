@@ -1,0 +1,48 @@
+
+body {
+    background-color: #ccc;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 50px; */
+    justify-content: space-around;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center;  */
+}
+
+.img-container {
+    width: 350px;
+    height: 300px;
+    margin: 25px auto 25px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 3px 3px gray;
+    border-radius: 20px;
+    transition-property: filter, box-shadow;
+    /* transition: box-shadow 0.2s ease-out 0s; */
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    filter: grayscale(1);
+}
+
+.img-container:hover{
+    filter: grayscale(0);
+    scale: 1.05;
+
+    background-size: 100% ;
+    
+
+    box-shadow: 0 0 10px 10px gray;
+    transition-property: filter, box-shadow, scale;
+    /* transition: box-shadow 0.3s ease-in 0s; */
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.05s;
+    /* transition: background-image 0.5s ease-in-out 0.1s; */
+
+
+}
